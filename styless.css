@@ -1,0 +1,42 @@
+body {
+   font-family: Roboto, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+ }
+ 
+#board {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+   
+   /* Your solution goes here */ 
+   display: grid; 
+   /* repeats each line 3 times */
+   grid-template-columns: repeat(3, 100px);  
+   grid-template-rows: repeat(3, 100px); 
+   /* creates channels in between each box */
+   gap: 10px; 
+   /* ceneters horizontally */
+   justify-content: center;
+
+}
+
+#board > div {
+   border: 1px solid LightSkyBlue;
+   text-align: center;
+   background-color: rgb(200, 157, 227);
+   border: 4px solid;
+   border-color: rgba(233, 127, 208, 0.715);
+
+   transition: all 0.2s ease;
+}
+
+#board > div:hover {
+   background-color:rgb(157, 124, 177) ;
+}
